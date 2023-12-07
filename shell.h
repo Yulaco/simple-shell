@@ -4,10 +4,15 @@
 /*Standard Libraries*/
 #include <unistd.h>
 #include <stdio.h>
-
+#include <stddef.h>
+#include <string.h>
+#include <sys/types.h>
 
 /*Shell Functions*/
 int main(void);
-int isatty(int fd);
+int main(int ac, char **av);
+int _isatty(int fd);
+size_t frase_len(const char *f);
+ssize_t print_text(int fd, const void *dados, size_t count);
 
 #endif
