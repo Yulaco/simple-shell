@@ -25,7 +25,7 @@ int puts_text(const char *s)
 	int words = 0;
 
 	do {
-		write(1, &s[i], 1);
+		write(1, &s[words], 1);
 		words++;
 	} while (s[words] != '\0');
 
