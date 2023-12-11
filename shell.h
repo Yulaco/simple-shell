@@ -14,5 +14,6 @@ int main(int ac, char **av);
 int _isatty(int fd);
 size_t frase_len(const char *f);
 ssize_t print_text(int fd, const void *dados, size_t count);
+int puts_text(const char *s);
 
 #endif
